@@ -1,0 +1,588 @@
+/* ==========================================
+   SKEETRA®
+   STYLE.CSS
+========================================== */
+
+:root{
+
+--forest:#133C28;
+--lime:#A4D65E;
+--cream:#F6F1E7;
+--white:#ffffff;
+--dark:#1A1A1A;
+--shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:var(--white);
+color:var(--dark);
+line-height:1.6;
+overflow-x:hidden;
+}
+
+/* ==========================
+   TOP BAR
+========================== */
+
+.topbar{
+background:var(--forest);
+color:white;
+padding:10px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:.85rem;
+font-weight:600;
+letter-spacing:.5px;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:white;
+box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 5%;
+}
+
+.logo img{
+height:80px;
+width:auto;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:var(--forest);
+font-weight:700;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:var(--lime);
+}
+
+.buy-btn{
+background:var(--forest);
+color:white;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.buy-btn:hover{
+background:var(--lime);
+color:var(--forest);
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+min-height:90vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+padding:80px 5%;
+
+background:
+linear-gradient(
+rgba(246,241,231,.90),
+rgba(246,241,231,.90)
+),
+
+url('images/key-west-bg.jpg');
+
+background-size:cover;
+background-position:center;
+gap:60px;
+}
+
+.hero-content{
+flex:1;
+max-width:650px;
+}
+
+.hero h1{
+font-size:4.5rem;
+line-height:1.05;
+color:var(--forest);
+margin-bottom:20px;
+}
+
+.hero h2{
+font-size:1.4rem;
+color:var(--lime);
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.hero p{
+font-size:1.15rem;
+margin-bottom:35px;
+max-width:550px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.primary-btn{
+background:var(--forest);
+color:white;
+padding:18px 40px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.primary-btn:hover{
+background:var(--lime);
+color:var(--forest);
+transform:translateY(-2px);
+}
+
+.secondary-btn{
+border:2px solid var(--forest);
+color:var(--forest);
+padding:18px 40px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.secondary-btn:hover{
+background:var(--forest);
+color:white;
+}
+
+.hero-product{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-product img{
+max-width:450px;
+width:100%;
+filter:drop-shadow(0 20px 40px rgba(0,0,0,.15));
+transition:.4s;
+}
+
+.hero-product img:hover{
+transform:translateY(-10px);
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features{
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+
+gap:25px;
+
+padding:70px 5%;
+
+background:white;
+text-align:center;
+}
+
+.feature{
+padding:30px;
+border-radius:20px;
+background:var(--cream);
+box-shadow:var(--shadow);
+}
+
+.feature h3{
+font-size:2rem;
+margin-bottom:10px;
+}
+
+.feature p{
+font-weight:600;
+}
+
+/* ==========================
+   CONTAINERS
+========================== */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:90px 20px;
+}
+
+/* ==========================
+   INGREDIENTS
+========================== */
+
+#ingredients{
+background:#f8faf8;
+}
+
+#ingredients h2{
+text-align:center;
+font-size:3rem;
+color:var(--forest);
+margin-bottom:60px;
+}
+
+.ingredient-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:var(--forest);
+margin-bottom:15px;
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+#about{
+background:var(--cream);
+text-align:center;
+}
+
+#about h2{
+font-size:3rem;
+margin-bottom:25px;
+color:var(--forest);
+}
+
+#about p{
+max-width:900px;
+margin:auto;
+font-size:1.1rem;
+margin-bottom:20px;
+}
+
+/* ==========================
+   CTA SECTION
+========================== */
+
+.cta{
+
+background:var(--forest);
+
+color:white;
+
+text-align:center;
+
+padding:100px 20px;
+}
+
+.cta h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.cta p{
+font-size:1.15rem;
+margin-bottom:40px;
+}
+
+.cta .primary-btn{
+background:var(--lime);
+color:var(--forest);
+}
+
+.cta .primary-btn:hover{
+background:white;
+}
+
+/* ==========================
+   FAQ
+========================== */
+
+#faq h2{
+text-align:center;
+margin-bottom:50px;
+font-size:3rem;
+color:var(--forest);
+}
+
+#faq h3{
+margin-top:25px;
+margin-bottom:10px;
+color:var(--forest);
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+#contact{
+background:#fafafa;
+}
+
+#contact h2{
+text-align:center;
+font-size:3rem;
+margin-bottom:40px;
+color:var(--forest);
+}
+
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,
+textarea{
+
+padding:18px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:1rem;
+}
+
+textarea{
+height:180px;
+resize:none;
+}
+
+button{
+background:var(--forest);
+color:white;
+border:none;
+padding:18px;
+font-size:1rem;
+font-weight:bold;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:var(--lime);
+color:var(--forest);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+background:#0f2f20;
+
+color:white;
+
+text-align:center;
+
+padding:60px 20px;
+}
+
+footer img{
+max-height:80px;
+margin-bottom:20px;
+}
+
+footer p{
+margin:10px 0;
+}
+
+/* ==========================
+   FLOATING BUY BUTTON
+========================== */
+
+.floating-buy{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+background:var(--forest);
+
+color:white;
+
+padding:18px 28px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+z-index:9999;
+
+transition:.3s;
+}
+
+.floating-buy:hover{
+background:var(--lime);
+color:var(--forest);
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:991px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero-product img{
+max-width:320px;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.topbar{
+flex-direction:column;
+gap:8px;
+text-align:center;
+}
+
+.hero{
+padding-top:40px;
+}
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.hero h2{
+font-size:1rem;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.buy-btn,
+.primary-btn,
+.secondary-btn{
+width:100%;
+max-width:300px;
+text-align:center;
+}
+
+#ingredients h2,
+#about h2,
+#faq h2,
+#contact h2,
+.cta h2{
+font-size:2rem;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero-product img{
+max-width:250px;
+}
+
+.logo img{
+height:60px;
+}
+
+}
