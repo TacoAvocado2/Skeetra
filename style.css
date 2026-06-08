@@ -114,46 +114,75 @@ min-height:90vh;
 
 display:flex;
 align-items:center;
-justify-content:center;
+justify-content:space-between;
 
 padding:80px 5%;
 
 background:
 linear-gradient(
-rgba(246,241,231,.90),
-rgba(246,241,231,.90)
+rgba(255,255,255,.25),
+rgba(255,255,255,.25)
 ),
-
 url('images/key-west-bg.png');
 
 background-size:cover;
-background-position:center;
+background-position:center center;
+background-repeat:no-repeat;
+
 gap:60px;
+
 }
 
 .hero-content{
+
 flex:1;
 max-width:650px;
+
+background:rgba(255,255,255,.65);
+
+backdrop-filter:blur(6px);
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.10);
+
 }
 
 .hero h1{
+
 font-size:4.5rem;
 line-height:1.05;
 color:var(--forest);
 margin-bottom:20px;
+
+text-shadow:
+0 2px 10px rgba(255,255,255,.90);
+
 }
 
 .hero h2{
+
 font-size:1.4rem;
-color:var(--lime);
+color:var(--forest);
 margin-bottom:20px;
 letter-spacing:2px;
+
+text-shadow:
+0 2px 10px rgba(255,255,255,.90);
+
 }
 
 .hero p{
+
 font-size:1.15rem;
 margin-bottom:35px;
 max-width:550px;
+
+text-shadow:
+0 1px 6px rgba(255,255,255,.90);
+
 }
 
 .hero-buttons{
@@ -162,48 +191,25 @@ gap:20px;
 flex-wrap:wrap;
 }
 
-.primary-btn{
-background:var(--forest);
-color:white;
-padding:18px 40px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-transition:.3s;
-}
-
-.primary-btn:hover{
-background:var(--lime);
-color:var(--forest);
-transform:translateY(-2px);
-}
-
-.secondary-btn{
-border:2px solid var(--forest);
-color:var(--forest);
-padding:18px 40px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-transition:.3s;
-}
-
-.secondary-btn:hover{
-background:var(--forest);
-color:white;
-}
-
 .hero-product{
+
 flex:1;
 display:flex;
 justify-content:center;
+align-items:center;
+
 }
 
 .hero-product img{
-max-width:450px;
+
+max-width:550px;
 width:100%;
-filter:drop-shadow(0 20px 40px rgba(0,0,0,.15));
+
+filter:
+drop-shadow(0 30px 60px rgba(0,0,0,.35));
+
 transition:.4s;
+
 }
 
 .hero-product img:hover{
