@@ -567,82 +567,166 @@ color:var(--forest);
 }
 
 /* ==========================
-   MOBILE
+   MOBILE RESPONSIVE
 ========================== */
 
 @media(max-width:991px){
 
-.hero{
+.topbar{
 flex-direction:column;
 text-align:center;
-}
-
-.hero h1{
-font-size:3rem;
-}
-
-.hero-product img{
-max-width:320px;
-}
-
-.features{
-grid-template-columns:repeat(2,1fr);
+gap:5px;
+padding:10px;
 }
 
 nav{
 flex-direction:column;
-gap:20px;
+align-items:center;
+padding:15px;
+gap:15px;
+}
+
+.logo img{
+max-height:65px;
+width:auto;
 }
 
 nav ul{
-flex-wrap:wrap;
-justify-content:center;
-}
 
-}
-
-@media(max-width:768px){
-
-.topbar{
+display:flex;
 flex-direction:column;
-gap:8px;
+
+width:100%;
+
+gap:10px;
+
+padding:0;
+
+margin:0;
+
+}
+
+nav ul li{
+
+list-style:none;
+
+width:100%;
+
+}
+
+nav ul li a{
+
+display:block;
+
+width:100%;
+
+padding:12px;
+
+background:#f7f7f7;
+
+border-radius:12px;
+
 text-align:center;
+
+}
+
+.buy-btn{
+
+width:100%;
+
+max-width:300px;
+
+text-align:center;
+
 }
 
 .hero{
-padding-top:40px;
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+padding:40px 20px;
+
+min-height:auto;
+
+}
+
+.hero-content{
+
+max-width:100%;
+
+padding:20px;
+
 }
 
 .hero h1{
-font-size:2.4rem;
+
+font-size:2.7rem;
+
+line-height:1.1;
+
 }
 
 .hero h2{
-font-size:1rem;
+
+font-size:1.1rem;
+
 }
 
-.features{
-grid-template-columns:1fr;
+.hero p{
+
+font-size:1rem;
+
+max-width:100%;
+
 }
 
 .hero-buttons{
+
 justify-content:center;
+
 }
 
-.buy-btn,
 .primary-btn,
 .secondary-btn{
+
 width:100%;
+
 max-width:300px;
+
 text-align:center;
+
 }
 
-#ingredients h2,
-#about h2,
-#faq h2,
-#contact h2,
-.cta h2{
-font-size:2rem;
+.hero-product img{
+
+max-width:300px;
+
+width:100%;
+
+margin-bottom:20px;
+
+}
+
+.features{
+
+grid-template-columns:1fr;
+
+gap:15px;
+
+}
+
+.ingredient-grid{
+
+grid-template-columns:1fr;
+
+}
+
+footer img{
+
+max-width:220px;
+
 }
 
 }
@@ -650,7 +734,7 @@ font-size:2rem;
 @media(max-width:480px){
 
 .hero h1{
-font-size:2rem;
+font-size:2.2rem;
 }
 
 .hero-product img{
@@ -658,7 +742,7 @@ max-width:250px;
 }
 
 .logo img{
-height:60px;
+max-height:55px;
 }
 
 }
