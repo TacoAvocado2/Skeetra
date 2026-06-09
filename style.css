@@ -769,9 +769,14 @@ font-size:1.1rem;
 
 .merch-grid{
 
-display:flex;
+display:grid;
 
-justify-content:center;
+grid-template-columns:
+repeat(auto-fit,minmax(350px,1fr));
+
+gap:30px;
+
+align-items:start;
 
 }
 
