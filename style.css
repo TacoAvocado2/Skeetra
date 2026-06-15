@@ -912,3 +912,45 @@ height:220px;
 }
 
 }
+
+.hamburger{
+display:none;
+background:none;
+border:none;
+font-size:2rem;
+color:var(--forest);
+cursor:pointer;
+padding:0;
+}
+
+@media(max-width:991px){
+
+.hamburger{
+display:block;
+}
+
+nav ul{
+
+display:none;
+
+width:100%;
+
+flex-direction:column;
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+margin-top:15px;
+
+}
+
+nav ul.show{
+display:flex;
+}
+
+}
