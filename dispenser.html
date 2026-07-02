@@ -1676,6 +1676,152 @@ font-size:42px;
 }
 
 </style>
+</div>
 
+<script>
+
+function checkPassword(){
+
+    const password="7318149";
+
+    const entered=document.getElementById("password").value;
+
+    if(entered===password){
+
+        document.getElementById("password-screen").style.display="none";
+
+        document.getElementById("protected-content").style.display="block";
+
+    }else{
+
+        document.getElementById("error").innerHTML="Incorrect Access Code";
+
+    }
+
+}
+
+document.getElementById("password").addEventListener("keypress",function(e){
+
+    if(e.key==="Enter"){
+
+        checkPassword();
+
+    }
+
+});
+
+</script>
+
+<style>
+
+#password-screen{
+
+position:fixed;
+
+inset:0;
+
+background:#0b1d13;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999999;
+
+}
+
+.password-box{
+
+background:white;
+
+padding:60px;
+
+border-radius:20px;
+
+width:420px;
+
+max-width:92%;
+
+text-align:center;
+
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.password-box h1{
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:20px;
+
+color:#1f4b2e;
+
+}
+
+.password-box p{
+
+margin-bottom:25px;
+
+color:#666;
+
+}
+
+.password-box input{
+
+width:100%;
+
+padding:16px;
+
+font-size:20px;
+
+border:2px solid #ddd;
+
+border-radius:12px;
+
+text-align:center;
+
+}
+
+.password-box button{
+
+margin-top:20px;
+
+padding:16px 40px;
+
+background:#1f4b2e;
+
+color:white;
+
+border:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+.password-box button:hover{
+
+background:#163722;
+
+}
+
+#error{
+
+margin-top:20px;
+
+color:#c62828;
+
+font-weight:bold;
+
+}
+
+</style>
 </body>
 </html>
