@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Skeetra® Hospitality Dispenser Program</title>
+
+<meta name="description"
+content="Commercial outdoor bug repellent dispensers for hotels, resorts, restaurants, bars, marinas, golf courses and hospitality venues.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:#f8f8f6;
+
+color:#222;
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+.container{
+
+width:min(1300px,92%);
+
+margin:auto;
+
+}
+
+/*========================*/
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:90px;
+
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(18px);
+
+z-index:9999;
+
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+
+}
+
+nav{
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.logo img{
+
+height:65px;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:40px;
+
+list-style:none;
+
+}
+
+nav a{
+
+font-weight:600;
+
+color:#23482d;
+
+}
+
+.cta-btn{
+
+padding:15px 34px;
+
+background:#1f4b2e;
+
+color:white;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:.35s;
+
+}
+
+.cta-btn:hover{
+
+background:#163722;
+
+}
+
+/*========================*/
+
+.hero{
+
+position:relative;
+
+height:100vh;
+
+display:flex;
+
+align-items:center;
+
+overflow:hidden;
+
+}
+
+.hero-bg{
+
+position:absolute;
+
+inset:0;
+
+}
+
+.hero-bg img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(15,28,20,.82),
+
+rgba(15,28,20,.45)
+
+);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+width:min(1300px,92%);
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:1.1fr .9fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:76px;
+
+line-height:1.05;
+
+color:white;
+
+margin-bottom:25px;
+
+}
+
+.hero h2{
+
+color:#d4b268;
+
+font-size:28px;
+
+margin-bottom:30px;
+
+font-weight:600;
+
+}
+
+.hero p{
+
+color:white;
+
+font-size:22px;
+
+margin-bottom:45px;
+
+max-width:700px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.primary{
+
+background:#1f4b2e;
+
+color:white;
+
+padding:18px 42px;
+
+border-radius:60px;
+
+font-weight:700;
+
+transition:.35s;
+
+}
+
+.primary:hover{
+
+background:#173821;
+
+transform:translateY(-4px);
+
+}
+
+.secondary{
+
+border:2px solid white;
+
+padding:18px 42px;
+
+border-radius:60px;
+
+color:white;
+
+font-weight:700;
+
+transition:.35s;
+
+}
+
+.secondary:hover{
+
+background:white;
+
+color:#222;
+
+}
+
+.hero-product{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.hero-product img{
+
+max-width:500px;
+
+width:100%;
+
+filter:
+
+drop-shadow(0 30px 70px rgba(0,0,0,.35));
+
+animation:float 6s ease-in-out infinite;
+
+}
+
+/*========================*/
+
+.stats{
+
+padding:80px 0;
+
+background:white;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.stat{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:40px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.stat h3{
+
+font-size:52px;
+
+color:#1f4b2e;
+
+margin-bottom:10px;
+
+font-family:'Playfair Display';
+
+}
+
+.stat p{
+
+font-size:18px;
+
+color:#666;
+
+}
+
+/*========================*/
+
+.section{
+
+padding:120px 0;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+font-family:'Playfair Display';
+
+font-size:56px;
+
+color:#1f4b2e;
+
+margin-bottom:20px;
+
+}
+
+.section-title p{
+
+font-size:22px;
+
+max-width:850px;
+
+margin:auto;
+
+color:#666;
+
+}
+
+/*========================*/
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+@media(max-width:1000px){
+
+.hero-content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:54px;
+
+}
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:700px){
+
+nav ul{
+
+display:none;
+
+}
+
+.hero{
+
+height:auto;
+
+padding:160px 0 80px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a class="logo" href="index.html">
+
+<img src="images/skeetra-logo.png">
+
+</a>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="#benefits">Benefits</a></li>
+
+<li><a href="#concepts">Dispenser Concepts</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<a href="#contact"
+
+class="cta-btn">
+
+Request Information
+
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-bg">
+
+<img src="images/dispenser-hero.jpg">
+
+</div>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div>
+
+<h1>
+
+Outdoor Hospitality
+Made Better.
+
+</h1>
+
+<h2>
+
+Commercial Bug Protection
+For Hotels • Resorts • Restaurants • Bars
+
+</h2>
+
+<p>
+
+Create a better guest experience with premium
+plant-based bug repellent dispensers from Skeetra®.
+
+Designed for outdoor hospitality environments,
+our dispensers provide guests with convenient
+access to protection while reinforcing your
+commitment to comfort and exceptional service.
+
+</p>
+
+<div class="buttons">
+
+<a href="#concepts"
+
+class="primary">
+
+View Concepts
+
+</a>
+
+<a href="#contact"
+
+class="secondary">
+
+Commercial Pricing
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-product">
+
+<img src="images/dispenser-concepts.png">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat">
+
+<h3>100%</h3>
+
+<p>
+
+Guest Convenience
+
+</p>
+
+</div>
+
+<div class="stat">
+
+<h3>DEET</h3>
+
+<p>
+
+Free Formula
+
+</p>
+
+</div>
+
+<div class="stat">
+
+<h3>Plant</h3>
+
+<p>
+
+Based
+
+</p>
+
+</div>
+
+<div class="stat">
+
+<h3>24/7</h3>
+
+<p>
+
+Always Available
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
