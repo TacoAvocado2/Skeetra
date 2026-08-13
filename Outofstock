@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Skeetra® | Currently Out of Stock</title>
+
+<meta name="description"
+content="Skeetra® products are currently out of stock. Please allow 7 to 10 days for shipping. Contact Skeetra sales for product availability and orders.">
+
+<meta name="robots" content="index,follow">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f5e9 0%,
+            #ffffff 50%,
+            #eef5ed 100%
+        );
+
+    color: #173d27;
+
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 55px 45px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.15);
+
+    border:
+        1px solid rgba(31,91,48,.12);
+
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+
+    width: 220px;
+
+    max-width: 80%;
+
+    height: auto;
+
+    margin-bottom: 30px;
+
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    background: #f1e4c8;
+
+    color: #76551b;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+}
+
+/* =========================
+   HEADLINE
+========================= */
+
+h1 {
+
+    margin: 0 0 18px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(2.2rem, 6vw, 4rem);
+
+    line-height: 1.05;
+
+    color: #17472b;
+
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.lead {
+
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #555;
+
+}
+
+.shipping {
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    max-width: 570px;
+
+    border-radius: 16px;
+
+    background: #f3f7ef;
+
+    border-left:
+        5px solid #2d7040;
+
+}
+
+.shipping strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #17472b;
+
+    font-size: 22px;
+
+}
+
+.shipping p {
+
+    margin: 0;
+
+    color: #555;
+
+    line-height: 1.6;
+
+}
+
+/* =========================
+   EMAIL BUTTON
+========================= */
+
+.email-button {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 17px 34px;
+
+    border-radius: 50px;
+
+    background: #1e6035;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        box-shadow .2s ease;
+
+    box-shadow:
+        0 10px 25px rgba(30,96,53,.25);
+
+}
+
+.email-button:hover {
+
+    background: #154827;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(30,96,53,.30);
+
+}
+
+/* =========================
+   EMAIL ADDRESS
+========================= */
+
+.email {
+
+    display: block;
+
+    margin-top: 18px;
+
+    color: #1e6035;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    margin-top: 45px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid #e5e5e5;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+.footer a {
+
+    color: #1e6035;
+
+    text-decoration: none;
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .page {
+
+        padding: 15px;
+
+    }
+
+    .card {
+
+        padding:
+            40px 22px;
+
+        border-radius: 18px;
+
+    }
+
+    .logo {
+
+        width: 180px;
+
+    }
+
+    .lead {
+
+        font-size: 17px;
+
+    }
+
+    .shipping {
+
+        padding: 20px;
+
+    }
+
+    .shipping strong {
+
+        font-size: 19px;
+
+    }
+
+    .email-button {
+
+        width: 100%;
+
+        padding: 16px 20px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<main class="page">
+
+    <section class="card">
+
+        <!-- SKEETRA LOGO -->
+
+        <img
+            src="images/skeetra-logo.png"
+            alt="Skeetra®"
+            class="logo"
+        >
+
+
+        <!-- STATUS -->
+
+        <div class="status">
+
+            Currently Out of Stock
+
+        </div>
+
+
+        <!-- HEADLINE -->
+
+        <h1>
+
+            Thank You For Choosing Skeetra®
+
+        </h1>
+
+
+        <!-- MESSAGE -->
+
+        <p class="lead">
+
+            We are currently experiencing high demand
+            for Skeetra® products and our inventory is
+            temporarily sold out.
+
+        </p>
+
+
+        <!-- SHIPPING INFORMATION -->
+
+        <div class="shipping">
+
+            <strong>
+
+                Please Allow 7–10 Days For Shipping
+
+            </strong>
+
+            <p>
+
+                New product is currently being prepared
+                for shipment. Please allow approximately
+                7–10 days for your order to ship.
+
+            </p>
+
+        </div>
+
+
+        <!-- SALES -->
+
+        <p class="lead">
+
+            For product availability, orders,
+            wholesale opportunities, or additional
+            information, please contact our sales team.
+
+        </p>
+
+
+        <a
+            href="mailto:sales@skeetra.com"
+            class="email-button"
+        >
+
+            CONTACT SKEETRA SALES
+
+        </a>
+
+
+        <a
+            href="mailto:sales@skeetra.com"
+            class="email"
+        >
+
+            sales@skeetra.com
+
+        </a>
+
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            <strong>Skeetra®</strong>
+
+            <br>
+
+            All Natural Bug Repellent
+
+            <br><br>
+
+            <a href="https://skeetra.com">
+                Skeetra.com
+            </a>
+
+            <br><br>
+
+            © 2026 Skeetra®. All Rights Reserved.
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>
