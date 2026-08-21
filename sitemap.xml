@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Skeetra Homepage -->
+  <url>
+    <loc>https://skeetra.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Skeetra Bug Repellent -->
+  <url>
+    <loc>https://skeetra.com/skeetra-bug-repellant.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Skeetra Equine Spray -->
+  <url>
+    <loc>https://skeetra.com/skeetra-equine-spray.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skeetra Pet Shampoo -->
+  <url>
+    <loc>https://skeetra.com/skeetra-pet-shampoo.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Horse Fly Spray -->
+  <url>
+    <loc>https://skeetra.com/horse-fly-spray.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Dispenser -->
+  <url>
+    <loc>https://skeetra.com/dispenser.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hotel & Hospitality -->
+  <url>
+    <loc>https://skeetra.com/hotel-hospitality-skeetra.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Investors -->
+  <url>
+    <loc>https://skeetra.com/investors.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Merchandise -->
+  <url>
+    <loc>https://skeetra.com/merch.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Out of Stock -->
+  <url>
+    <loc>https://skeetra.com/outofstock.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
